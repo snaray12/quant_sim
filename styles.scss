@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'DM Mono', monospace;
+}
+
+/* Dark background */
+.stApp { 
+    background-color: #0a0c10; 
+}
+
+section[data-testid="stSidebar"] { 
+    background-color: #111318; 
+    border-right: 1px solid #1e2230; 
+}
+
+/* Headings */
+h1, h2, h3 { 
+    font-family: 'Syne', sans-serif !important; 
+}
+
+/* Metric cards */
+.metric-card {
+    background: #111318;
+    border: 1px solid #1e2230;
+    border-radius: 10px;
+    padding: 16px 20px;
+    text-align: center;
+}
+
+.metric-label { 
+    font-size: 10px; 
+    letter-spacing: 1.5px; 
+    color: #5a6179; 
+    text-transform: uppercase; 
+    margin-bottom: 6px; 
+}
+
+.metric-value { 
+    font-size: 24px; 
+    font-weight: 700; 
+    font-family: 'Syne', sans-serif; 
+}
+
+/* Scenario rows */
+.scenario-row {
+    background: #111318;
+    border: 1px solid #1e2230;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Tags */
+.tag {
+    display: inline-block;
+    background: rgba(61,127,255,0.12);
+    border: 1px solid rgba(61,127,255,0.3);
+    color: #3d7fff;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin: 2px;
+    letter-spacing: 0.5px;
+}
+
+/* Thinking box */
+.thinking-box {
+    background: #111318;
+    border-left: 3px solid #00e5a0;
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    font-size: 12px;
+    color: #5a6179;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+/* Confidence bar */
+.conf-bar-track {
+    background: #1e2230;
+    border-radius: 4px;
+    height: 8px;
+    width: 100%;
+    position: relative;
+    margin-top: 6px;
+}
+
+/* Report text */
+.report-text {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #c8cfe0;
+}
+
+/* Divider */
+hr { 
+    border-color: #1e2230; 
+}
+
+/* Hide streamlit branding */
+#MainMenu, footer { 
+    visibility: hidden; 
+}
